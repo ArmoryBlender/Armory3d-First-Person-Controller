@@ -6,4 +6,7 @@ In a 3d world a player can face in any direction he wants. If the player looks t
 
 ![0](https://user-images.githubusercontent.com/48133099/107522433-00677e80-6bb4-11eb-98d2-474d237ac7df.png)
 
+The same thing with forward & backwards goes with left & right. The positive direction (right) dont need math to get calculated but for the negative direction (left) it is needed.
 
+
+![2](https://user-images.githubusercontent.com/48133099/107523062-a3b89380-6bb4-11eb-9add-8f24d7d615ff.PNG)
