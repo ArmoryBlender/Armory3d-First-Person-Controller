@@ -61,3 +61,11 @@ So the property knows now when we are running and when not. With this property w
 ![Che](https://user-images.githubusercontent.com/48133099/108368022-49de4c00-71fa-11eb-959d-ad2d44679fd7.png)
 
 If it "isRunning" == true then we subtract 0.3 or 0.4 from our stamina points while we running. If "isRunning" == false then we want to gain stamina because we are no longer running. The player can rest now!
+
+We the sequence node we can do another task. We additionaly check down there if we are out of stamina, if so then set the normal speed.
+
+
+This is basically it....I think. I really hope you get a picture with my documentation. I hope explained it right for the ones that understand this topic better!
+
+Greetings 
+Armoryblender
