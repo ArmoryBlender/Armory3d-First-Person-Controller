@@ -39,4 +39,4 @@ To run we want to first check if we are actually moving instead of instantly run
 
 To check it now if we are running looks like this:
 
-
+![Check running](https://user-images.githubusercontent.com/48133099/108365823-f10db400-71f7-11eb-9f34-128bc2a7c0e6.png)
