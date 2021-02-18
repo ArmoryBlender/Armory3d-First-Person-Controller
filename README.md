@@ -30,7 +30,9 @@ Armoryblender
 
 
 # Update 2:
-In the new last video we created sprinting with a stamina system. Additionaly we created a canvas with our stamina bar on it. Now we can run a limited time because of the stamina system.
+In the new last video we created sprinting with a stamina system. Additionaly we created a canvas with our stamina bar on it. Now we can run a limited time because of the stamina system. Sprinting with the stamina system is very common in first person games.
+
+
 
 # Check moving
 To run we want to first check if we are actually moving instead of instantly running from the standing state. To check this we add all our keyboard states and merge them all together with the merge node. Everything that you plug into the merge gets checked with a "or" statement. To understand this better this node reads it like this: "If the keyboard key W gets pressed then I will do the task or if at least the other keyboard key S gets pressed then I will also do the task" I know its so bad explained but I hope you get the idea. So if any of those key gets pressed, in other words if are moving in any direction it should check if we are holding the shift button to run. 
