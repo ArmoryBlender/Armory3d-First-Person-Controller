@@ -32,6 +32,8 @@ Armoryblender
 # Update 2:
 In the new last video we created sprinting with a stamina system. Additionaly we created a canvas with our stamina bar on it. Now we can run a limited time because of the stamina system. Sprinting with the stamina system is very common in first person games.
 
+![half-life-2-9](https://user-images.githubusercontent.com/48133099/108370912-7d6ea580-71fd-11eb-887a-1acd1cb6758d.jpg)
+
 
 
 # Check moving
