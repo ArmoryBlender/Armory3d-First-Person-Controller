@@ -37,7 +37,7 @@ In the new last video we created sprinting with a stamina system. Additionaly we
 
 
 # Check moving
-To run we want to first check if we are actually moving instead of instantly running from the standing state. To check this we add all our keyboard states and merge them all together with the merge node. Everything that you plug into the merge gets checked with a "or" statement. To understand this better this node reads it like this: "If the keyboard key W gets pressed then I will do the task or if at least the other keyboard key S gets pressed then I will also do the task" I know its so bad explained but I hope you get the idea. So if any of those key gets pressed, in other words if are moving in any direction it should check if we are holding the shift button to run. 
+To run we want to first check if we are actually moving instead of instantly running from the standing state. To check this we add all our keyboard states and merge them all together with the merge node. Everything that you plug into the merge node gets checked with a "or" statement. To understand this better this node reads it like this: "If the keyboard key W gets pressed then I will do the task or if at least the other keyboard key S gets pressed then I will also do the task" I know its bad explained but I hope you get the idea. So if any of those key gets pressed, in other words if we are moving in any direction it should check if we are holding the shift button to run. 
 
 ![merge](https://user-images.githubusercontent.com/48133099/108365705-cd4a6e00-71f7-11eb-93b3-523114ecfb79.PNG)
 
@@ -51,12 +51,12 @@ To check it now if we are running looks like this:
 For the beginners that still doesn't know how the stamina system works:
 In the beginning of our game a new property gets created called stamina. This property got assigned with a value, a float value and its set to 100. So you can now look at this like 100 stamina points but with decimals numbers.
 
-Now if we want to run we want to check, if we actually have stamina to run. If we dont have stamina then is clear that we cannot run. We check this with a compare node. It compares to first value(our stamina points) with the second value(given float value). We set the minimum run point to 5. This means that we ran so long that we dont have any more stamina left to run further. This comparision looks like this:
+Now if we want to run we want to check, if we actually have stamina to run. If we dont have stamina then it is clear that we cannot run. We check this with a compare node. It compares the first value(our stamina points) with the second value(given float value). We set the minimum run point to 5. This means that we ran so long that we dont have any more stamina left to run further. This comparision looks like this:
 
 ![Unbenannt Kopie](https://user-images.githubusercontent.com/48133099/108367120-6af26d00-71f9-11eb-8c17-94eaa9c63d3b.png)
 
 
-If we have more than 5 stamina points, then we set the movement speed higher and also set the "IsRunning" property to true. If we less then 5 stamina points left then we set the movement speed to the normal speed and also set the porperty "isRunning" to false.
+If we have more than 5 stamina points, then we set the movement speed higher and also set the "IsRunning" property to true. If we have less then 5 stamina points left then we set the movement speed to the normal speed and also set the porperty "isRunning" to false.
 
 
 # IsRunning
@@ -64,9 +64,9 @@ So the property knows now when we are running and when not. With this property w
 
 ![Che](https://user-images.githubusercontent.com/48133099/108368022-49de4c00-71fa-11eb-959d-ad2d44679fd7.png)
 
-If it "isRunning" == true then we subtract 0.3 or 0.4 from our stamina points while we running. If "isRunning" == false then we want to gain stamina because we are no longer running. The player can rest now!
+If "isRunning" == true then we subtract 0.3 or 0.4 from our stamina points while we running. If "isRunning" == false then we want to gain stamina because we are no longer running. The player can rest now!
 
-We the sequence node we can do another task. We additionaly check down there if we are out of stamina, if so then set the normal speed.
+With the sequence node we can do another task. We additionaly check down there if we are out of stamina, if so then set the normal speed.
 
 
 This is basically it....I think. I really hope you get a picture with my documentation. I hope explained it right for the ones that understand this topic better!
