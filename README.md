@@ -43,6 +43,7 @@ To check it now if we are running looks like this:
 
 
 # Stamina System
+# Stamina
 For the beginners that still doesn't know how the stamina system works:
 In the beginning of our game a new property gets created called stamina. This property got assigned with a value, a float value and its set to 100. So you can now look at this like 100 stamina points but with decimals numbers.
 
@@ -53,3 +54,10 @@ Now if we want to run we want to check, if we actually have stamina to run. If w
 
 If we have more than 5 stamina points, then we set the movement speed higher and also set the "IsRunning" property to true. If we less then 5 stamina points left then we set the movement speed to the normal speed and also set the porperty "isRunning" to false.
 
+
+# IsRunning
+So the property knows now when we are running and when not. With this property we can now decide when we want to loose stamina and when to gain stamina. This looks like this:
+
+![Che](https://user-images.githubusercontent.com/48133099/108368022-49de4c00-71fa-11eb-959d-ad2d44679fd7.png)
+
+If it "isRunning" == true then we subtract 0.3 or 0.4 from our stamina points while we running. If "isRunning" == false then we want to gain stamina because we are no longer running. The player can rest now!
