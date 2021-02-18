@@ -35,4 +35,4 @@ In the new last video we created sprinting with a stamina system. Additionaly we
 # Check moving
 To run we want to first check if we are actually moving instead of instantly running from the standing state. To check this we add all our keyboard states and merge them all together with the merge node. Everything that you plug into the merge gets checked with a "or" statement. To understand this better this node reads it like this: "If the keyboard key W gets pressed then I will do the task or if at least the other keyboard key S gets pressed then I will also do the task" I know its so bad explained but I hope you get the idea. So if any of those key gets pressed, in other words if are moving in any direction it should check if we are holding the shift button to run. 
 
-![merge](https://user-images.githubusercontent.com/48133099/108365099-1f3ec400-71f7-11eb-916e-3dd659757cbf.PNG)
+![merge](https://user-images.githubusercontent.com/48133099/108365705-cd4a6e00-71f7-11eb-93b3-523114ecfb79.PNG)
