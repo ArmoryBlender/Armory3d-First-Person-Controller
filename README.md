@@ -40,3 +40,12 @@ To run we want to first check if we are actually moving instead of instantly run
 To check it now if we are running looks like this:
 
 ![Check running](https://user-images.githubusercontent.com/48133099/108365823-f10db400-71f7-11eb-9f34-128bc2a7c0e6.png)
+
+
+# Stamina System
+For the beginners that still doesn't know how the stamina system works:
+In the beginning of our game a new property gets created called stamina. This property got assigned with a value, a float value and its set to 100. So you can now look at this like 100 stamina points but with decimals numbers.
+
+Now if we want to run we want to check, if we actually have stamina to run. If we dont have stamina then is clear that we cannot run. We check this with a compare node. It compares to first value(our stamina points) with the second value(given float value). We set the minimum run point to 5. This means that we ran so long that we dont have any more stamina left to run further. This comparision looks like this:
+
+
