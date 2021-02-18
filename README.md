@@ -48,4 +48,8 @@ In the beginning of our game a new property gets created called stamina. This pr
 
 Now if we want to run we want to check, if we actually have stamina to run. If we dont have stamina then is clear that we cannot run. We check this with a compare node. It compares to first value(our stamina points) with the second value(given float value). We set the minimum run point to 5. This means that we ran so long that we dont have any more stamina left to run further. This comparision looks like this:
 
+![Unbenannt Kopie](https://user-images.githubusercontent.com/48133099/108367120-6af26d00-71f9-11eb-8c17-94eaa9c63d3b.png)
+
+
+If we have more than 5 stamina points, then we set the movement speed higher and also set the "IsRunning" property to true. If we less then 5 stamina points left then we set the movement speed to the normal speed and also set the porperty "isRunning" to false.
 
